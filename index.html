@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <title>Chronos</title>
+     <link href="bootstrap.min.css" rel="stylesheet">
+     <link href="bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <div class="nav nav--alpha">
+      <h1 class="nav__title"><span class="icon-1"></span>Chronos</h1>
+      <div class="nav__actions">
+        <div class="nav__menu__alpha">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link is-active">Pinboard</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Calendar</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Friends</a></li>
+            <li class="nav__item has-unread has-dropdown">
+              <a href="#" class="nav__link">Messages</a>
+              <span class="notification notification--pill">8</span>
+              <div class="dropdown">
+                <div class="dropdown__actions">
+                  <div class="fake-dropdown-header-actions"><span class="fake-darker">Inbox (8)</span> / Sent</div>
+                    <div class="leaf"></div>                                           
+                </div>
+                <div id="dropdown-messages" class="dropdown__content">
+                    
+                        <ul class="nav__list">
+                          <li class="nav__item">
+                            <a href="#" class="link--user link--user--avatar">
+                              <img class="user-avatar" src="imgs/pic-1.png" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                    
+                    <h2 class="scenario">Jacob Hubertous</h2>
+                    <p class="scenario1">Are you coming to the roadtrip?</p><br/><br/>
+                    
+                    <ul class="nav__list">
+                          <li class="nav__item">
+                            <a href="#" class="link--user link--user--avatar">
+                              <img class="user-avatar" src="imgs/pic-2.jpg" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                    <h2 class="scenario2">Jasmine Larsson</h2>
+                    <p class="scenario3">This Pinboard idea in Chronos is neat</p><br/>
+                    
+                    <ul class="nav__list">
+                          <li class="nav__item">
+                            <a href="#" class="link--user link--user--avatar">
+                              <img class="user-avatar" src="imgs/pic-3.png" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                     <h2 class="scenario4">Trent Walton</h2>
+                </div>
+                  
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__menu__beta">
+          <ui class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="link--user link--user--avatar">
+                <img class="user-avatar" src="imgs/pic-4.jpg" alt="">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="link--user link--user--add">
+                <span class="icon-7"></span>
+              </a>
+            </li>
+          </ui>
+        </div>
+      </div>
+    </div>
+
+    <div class="masthead entry--photo entry--photo--masthead">
+      <div class="entry__stats">
+        <span class="entry__likes">
+          <span class="icon-2"><span class="heel">10023</span></span>
+          
+        </span>
+        <h3 class="masthead__featured">Featured</h3>
+      </div>
+      <div class="entry__content">
+        <div class="masthead__content__left">
+          <h2 class="masthead__content__title">Roadtrip on Highway One</h2>
+          <time class="masthead__content__time">26 January - 1 February</time>
+        </div>
+        <div class="masthead__content__right">
+          <ul class="masthead__content__nav">
+            <li>Blog Post</li>
+            <li class="is-active">Event</li>
+            <li>Photo</li>
+            <li>Music</li>
+            <li>Video</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry__bottom">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="link--user link--user--avatar">
+              <img class="user-avatar" src="imgs/pic-1.png" alt="">
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="link--user link--user--avatar">
+              <img class="user-avatar" src="imgs/pic-2.jpg" alt="">
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="link--user link--user--avatar">
+              <img class="user-avatar" src="imgs/pic-3.png" alt="">
+            </a>
+          </li>
+        </ul>
+
+        
+      </div>
+    </div>
+
+    <div class="nav nav--beta">
+      <h2 class="nav__title">Your Pinboard</h2>
+
+      <div class="nav__actions">
+        <h3 class="heasder--inline nav-sort-header">Sort By &nbsp;</h3>
+        <ul class="nav__list nav__list--inline">
+         
+            <span class="icon-3"></span>
+           <span class="icon-4"></span>
+            <span class="icon-5"></span>
+            <span class="icon-6"></span>
+
+            
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="entries-list" class="entries">
+      <!-- entries get rendered here by handlebars -->
+    </div>
+
+    <section id="Pinboard">
+
+        <div class="entries">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="image" id="image1">
+                        
+                        <div class="parent">
+                          <img class="image1" src="imgs/Image-2.jpg" class="img-responsive" alt=""/>
+                            <div class="image2"><span class="heel">1001</span></div>
+                            <div class="image3"></div>
+                            
+                        
+                        </div>
+                     </div>                   
+                </div>
+                
+                
+               <div class="col-md-4 col-sm-6">
+                    	<div class="image" id="image6">
+                        <div class="parent">
+                        <div class="grayheart"><span class="heel" style="color:gray">52</span></div>
+                        <div class="blue"></div>
+                        <span class="caption1" style="color:gray"><h2>This pinboard is filled with cool events,photos and media.I love it.</h2></span>
+                       </div>
+						</div>                   
+                </div>   
+                <div class="col-md-4 col-sm-6">
+                    	<div class="image" id="image2">
+                            <div class="parent">
+                        <img class="image1" src="imgs/Image-2.jpg" class="img-responsive" alt="">
+                        <div class="image2"><span class="heel">99</span></div>
+                            <span class="caption"><h2>Company retreat in Deer Valley,Utah</h2>
+                                <p2>3pm - 8pm</p2></span>
+                        <div class="friends">    
+                        <div class="entry__bottom">
+                        <ul class="nav__list">
+                          <li class="nav__item">
+                            <a href="#" class="link--user link--user--avatar">
+                              <img class="user-avatar" src="imgs/pic-1.png" alt="">
+                            </a>
+                          </li>
+                          <li class="nav__item">
+                            <a href="#" class="link--user link--user--avatar">
+                              <img class="user-avatar" src="imgs/pic-2.jpg" alt="">
+                            </a>
+                          </li>
+                          <li class="nav__item">
+                            <a href="#" class="link--user link--user--avatar">
+                              <img class="user-avatar" src="imgs/pic-3.png" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                            </div>  
+                        </div>
+						</div>   
+                    </div>
+                </div>           
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="image" id="image3">
+                        <div class="parent">
+                        <img class="image1" src="imgs/Image-2.jpg" class="img-responsive" alt="">
+                        <div class="image2"><span class="heel">22</span></div>
+                        <span class="caption"><h2>Daft Punk - Get lucky</h2>
+                                </span>
+                        <div class="image4"></div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          </div>
+                        </div>
+                        </div>
+						</div>                   
+                </div>
+                
+                
+                <div class="col-md-4 col-sm-6">                    
+						<div class="image" id="image4">
+                        <div class="parent">
+                        <img class="image1" src="imgs/Image-2.jpg" class="img-responsive" alt="">
+                        <div class="grayheart"><span class="heel">22</span></div>
+                        <span class="caption"><h2>Summer Nights</h2></span>
+                        <div class="playbutton"></div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                          </div>
+                        </div>
+                        </div>
+						</div>                    
+                    
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    	<div class="image" id="image6">
+                        <div class="parent">
+                        <div class="grayheart"><span class="heel" style="color:gray">52</span></div>
+                        <span class="caption1" style="color:gray"><h2>What if the world revolves around Doge?</h2></span>
+                       </div>
+						</div>                   
+                </div>           
+                </div>
+            
+            
+                </div>
+            
+		
+    </section>
+    
+  <footer>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+      <div class="foot1"></div>
+        <div class="foot2"></div>
+       <div class="foot3"><span class="footnote">4January</span></div>
+          <div class="foot4"></div>
+          <div class="foot5"></div>
+  </div>
+</nav>
+    </footer>
+
+ 
+  
+</body>
+
+
+</html>
